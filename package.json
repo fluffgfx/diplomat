@@ -2,9 +2,9 @@
   "name": "diplomat-cli",
   "version": "0.1.0",
   "description": "Diplomat makes command line tools for nodeJS fun.",
-  "main": "diplomat.js",
+  "main": "diplomat-compiled.js",
   "scripts": {
-    "test": "grunt test"
+    "compile": "babel -o diplomat-compiled.js diplomat.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,6 @@
   "homepage": "https://github.com/vulpino/diplomat#readme",
   "devDependencies": {
     "babel-cli": "^6.4.0",
-    "babel-preset-es2015": "^6.3.13",
-    "grunt": "^0.4.5"
+    "babel-preset-es2015": "^6.3.13"
   }
 }

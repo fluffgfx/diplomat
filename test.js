@@ -1,17 +1,18 @@
 'use strict'
-/**
- * Created by Kyle Fahringer on 1/15/16.
- */
 
 let diplomat = require('./diplomat.js')
 
 class Test extends diplomat {
-  test (args, flags) {
+  test (flags, phrase) {
     if (flags['sad']) {
       console.log('Aww.')
     } else {
       console.log('Yay!')
     }
+    if (phrase) {
+      console.log(phrase)
+    }
+    console.log(flags['dream'])
   }
 
   test_help () {
@@ -25,7 +26,14 @@ class Test extends diplomat {
     return {
       'sad': {
         'type': 'boolean',
-        'default': 'false'
+        'default': 'false',
+        'desc': 'Determine whether I am sad today.'
+      },
+
+      'dream': {
+        'type': 'string',
+        'default': "I didn't have a dream last night.",
+        'desc': 'What did I dream last night?'
       }
     }
   }
