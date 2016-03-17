@@ -44,10 +44,4 @@ echobot.parse(process.argv)
 This is all written in ES6 and transpiled using babel, so clone the repository and use `babel-node` to test and `node compile` to compile. Or `babel -o diplomat-compiled.js diplomat.js`. Whatever floats your boat.
 
 ## Disclaimer
-This is version 0.1. I'm fairly sure I've ironed out the bugs, but there aren't very many types yet and there's still work to be done. Please mail any complaints, handwritten, to:
-```
-Malheur National Wildlife Refuge
-36391 Sodhouse Ln
-Princeton, OR 97721
-```
-Or just file a complain using the issue tracker, and I'll try my best to get back to you.
+This is version 0.1. I'm fairly sure I've ironed out the bugs, but there aren't very many types yet and there's still work to be done. Any features suggestions or issues can be reported using the github issue tracker. Thank you!
